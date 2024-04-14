@@ -396,6 +396,37 @@ Deploying your token contract to the Kadena testnet is an important step in the 
 
 By acquiring mainnet KDA tokens and ensuring that you have enough tokens to cover the gas fees, you'll be prepared to proceed with deploying your token contract to the Kadena mainnet in the next step.
 
+### **Step 9: Connect Your Wallet to the Mainnet**
+
+*Before deploying your token contract to the Kadena mainnet, you'll need to connect your Kadena wallet to the mainnet network. This step ensures that your wallet can interact with the mainnet blockchain and allows you to deploy and manage your token on the live network.*
+
+9.1. **Open Your Kadena Wallet**
+   - Launch the Kadena Wallet application that you set up in Step 1.
+
+9.2. **Select the Mainnet Network**
+   - In the wallet interface, look for an option to select or switch the network you want to connect to.
+   - Choose the "Mainnet" or "Kadena Mainnet" option.
+
+9.3. **Confirm the Network Switch**
+   - Depending on your wallet, you may be prompted to confirm the network switch or provide additional confirmation.
+   - Review the details and confirm the switch to the Kadena mainnet network.
+
+9.4. **Check Your Mainnet Balance**
+   - After connecting to the mainnet, you should see your mainnet balance, which should include the KDA tokens you acquired in Step 8.
+   - If you don't see your KDA tokens in your mainnet balance, double-check that you've transferred the tokens to the correct mainnet address.
+
+9.5. **Explore Mainnet Features (Optional)**
+   - Some wallets may have additional features or interfaces specifically for interacting with the mainnet.
+   - Explore these features to familiarize yourself with the mainnet environment and how it differs from the testnet.
+
+9.6. **Verify Mainnet Connection**
+   - To ensure that your wallet is correctly connected to the Kadena mainnet, you can try sending a small amount of KDA tokens to another mainnet address or performing other simple transactions.
+   - Monitor the transaction status and ensure that it is processed and confirmed on the mainnet.
+
+By connecting your Kadena wallet to the mainnet, you'll be able to deploy your token contract to the live Kadena blockchain and interact with it using real KDA tokens. This step is crucial for launching your token on the mainnet and making it available for others to use and trade.
+
+After successfully connecting your wallet to the mainnet, you'll be ready to proceed to the final step: deploying your token contract to the Kadena mainnet.
+
 
 
 
