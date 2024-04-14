@@ -52,7 +52,7 @@
 
 Throughout this process, be sure to thoroughly test your token contract, handle security precautions, and familiarize yourself with the Pact language and Kadena blockchain documentation. Additionally, consider seeking guidance from the Kadena community forums or official support channels if you encounter any issues or have further questions.
 
-*Let's go into more detail on each step, starting with setting up a Kadena wallet.*
+***Let's go into more detail on each step, starting with setting up a Kadena wallet.***
 
 ### **Step 1: Set up a Kadena Wallet**
 
