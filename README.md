@@ -359,5 +359,44 @@ After successfully connecting your wallet to the testnet, you'll be ready to pro
 
 Deploying your token contract to the Kadena testnet is an important step in the development process, as it allows you to test your token in a realistic blockchain environment before considering a mainnet deployment. If everything works as expected on the testnet, you can proceed to the next step, which involves acquiring mainnet Kadena (KDA) tokens for the mainnet deployment.
 
+### **Step 8: Acquire Mainnet Kadena (KDA) Tokens**
+
+*Before you can deploy your token contract to the Kadena mainnet, you'll need to acquire some mainnet Kadena (KDA) tokens. These tokens are required to pay for the gas fees associated with deploying and interacting with your contract on the mainnet.*
+
+8.1. **Understand Gas Fees**
+   - On the Kadena blockchain, every transaction requires a small amount of KDA tokens to be paid as a "gas fee" to compensate the network for processing the transaction.
+   - The gas fees are typically minimal, but you'll need to have some KDA tokens in your wallet to cover these fees.
+
+8.2. **Purchase KDA Tokens**
+   - There are several ways to acquire mainnet KDA tokens:
+     - Buy KDA tokens from a cryptocurrency exchange that lists them (e.g., Gate.io, KuCoin, Bittrex).
+     - Purchase KDA tokens directly from the Kadena website (https://kadena.io/buy-kda/).
+     - Acquire KDA tokens from a peer-to-peer exchange or over-the-counter (OTC) trading platform.
+
+8.3. **Transfer KDA Tokens to Your Wallet**
+   - Once you've acquired some KDA tokens, you'll need to transfer them to the Kadena wallet you set up in Step 1.
+   - If you purchased KDA tokens from an exchange, you'll typically need to withdraw them to your Kadena wallet's mainnet address.
+   - Ensure that you're transferring the tokens to the correct mainnet address, not the testnet address.
+
+8.4. **Check Your Mainnet Balance**
+   - After transferring the KDA tokens to your wallet, check your mainnet balance to ensure that the tokens have been received.
+   - In your Kadena wallet, switch to the mainnet network (if you haven't already) to view your mainnet balance.
+
+8.5. **Estimate Required Gas Fees**
+   - Before deploying your contract to the mainnet, you can use the `pact` command-line tool to estimate the gas fees required for deployment.
+   - Run the following command, replacing `'(token.token-main-entry)'` with the appropriate entry point for your contract:
+     ```
+     pact --host mainnet.kadena.io --port 443 --tls --code '(token.token-main-entry)' --estimate-gas
+     ```
+   - This command will provide an estimate of the gas fees required for deployment, without actually submitting the transaction.
+
+8.6. **Ensure Sufficient KDA Balance**
+   - Compare the estimated gas fees with your KDA balance in your wallet.
+   - Ensure that you have enough KDA tokens to cover the deployment gas fees, as well as some additional tokens for future interactions with your contract (e.g., minting, transferring, etc.).
+
+By acquiring mainnet KDA tokens and ensuring that you have enough tokens to cover the gas fees, you'll be prepared to proceed with deploying your token contract to the Kadena mainnet in the next step.
+
+
+
 
 
