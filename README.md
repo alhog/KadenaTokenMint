@@ -1,4 +1,4 @@
-#Kadena Token Minting 
+# Kadena Token Minting 
 
 
 1. **Set up a Kadena Wallet**
@@ -281,6 +281,38 @@ This is a simplified example, and you'll likely want to add more functionality, 
    - Based on the test results, you may need to refine your token contract code, fix any issues, and repeat the testing process until you're confident in your contract's functionality and security.
 
 Thorough testing in a local environment is essential for identifying and resolving potential issues before deploying your token contract to the Kadena testnet or mainnet. This step helps ensure that your token behaves as intended and minimizes the risk of errors or vulnerabilities once it's live on the blockchain.
+
+
+### **Step 6: Connect Your Wallet to the Testnet**
+
+*Before deploying your token contract to the Kadena testnet, you'll need to connect your Kadena wallet to the testnet network. This step ensures that your wallet can interact with the testnet blockchain and allows you to test your token in a more realistic environment.*
+
+6.1. **Open Your Kadena Wallet**
+   - Launch the Kadena Wallet application that you set up in Step 1.
+
+6.2. **Select the Testnet Network**
+   - In the wallet interface, look for an option to select or switch the network you want to connect to.
+   - Choose the "Testnet" or "Kadena Testnet" option.
+
+6.3. **Confirm the Network Switch**
+   - Depending on your wallet, you may be prompted to confirm the network switch or provide additional confirmation.
+   - Review the details and confirm the switch to the Kadena testnet network.
+
+6.4. **Check Your Testnet Balance**
+   - After connecting to the testnet, you should see your testnet balance, which should include the test tokens you requested from the Kadena Faucet in Step 2.
+   - If you don't see any test tokens in your testnet balance, you can repeat Step 2 to request more test tokens from the Faucet.
+
+6.5. **Explore Testnet Features (Optional)**
+   - Some wallets may have additional features or interfaces specifically for interacting with the testnet.
+   - Explore these features to familiarize yourself with the testnet environment and how it differs from the mainnet.
+
+6.6. **Verify Testnet Connection**
+   - To ensure that your wallet is correctly connected to the Kadena testnet, you can try sending a small amount of test tokens to another testnet address or performing other simple transactions.
+   - Monitor the transaction status and ensure that it is processed and confirmed on the testnet.
+
+By connecting your Kadena wallet to the testnet, you can now deploy and interact with your token contract in a realistic blockchain environment without risking any real funds. This step is crucial for thoroughly testing your token before considering a mainnet deployment.
+
+After successfully connecting your wallet to the testnet, you'll be ready to proceed to the next step: deploying your token contract to the Kadena testnet.
 
 
 
