@@ -427,6 +427,57 @@ By connecting your Kadena wallet to the mainnet, you'll be able to deploy your t
 
 After successfully connecting your wallet to the mainnet, you'll be ready to proceed to the final step: deploying your token contract to the Kadena mainnet.
 
+### **Step 10: Deploy Your Contract to the Mainnet**
+
+*Now that you've acquired mainnet KDA tokens and connected your Kadena wallet to the mainnet network, you're ready to deploy your token contract to the live Kadena blockchain. This step will make your token available for others to use, trade, and interact with on the mainnet.*
+
+10.1. **Open a Terminal or Command Prompt**
+   - Open a terminal or command prompt on your system.
+   - Navigate to the directory containing your token contract file (e.g., `token.pact`).
+
+10.2. **Load Your Contract**
+   - Use the `pact` command-line tool to load your token contract:
+     ```
+     pact --load token.pact --envdata envdata.json
+     ```
+   - This command loads your contract code and prepares it for deployment.
+
+10.3. **Connect to the Mainnet**
+   - Next, you'll need to specify the Kadena mainnet as the target blockchain for deployment.
+   - Use the `--host` and `--port` flags to connect to the mainnet:
+     ```
+     pact --host mainnet.kadena.io --port 443 --tls
+     ```
+   - These flags specify the mainnet URL and enable TLS (Transport Layer Security) for a secure connection.
+
+10.4. **Prepare the Deployment Command**
+   - Use the `pact` command-line tool to prepare the deployment command:
+     ```
+     pact --code '(token.token-main-entry)'
+     ```
+   - This command specifies the entry point for your token contract, which is typically a function named `token-main-entry` or something similar.
+
+10.5. **Sign and Submit the Deployment Transaction**
+   - Your Kadena wallet will prompt you to sign the deployment transaction.
+   - Open your wallet application, review the transaction details, and confirm the deployment.
+   - The transaction will require a gas fee, which will be paid using the KDA tokens in your wallet.
+
+10.6. **Wait for Transaction Confirmation**
+   - After submitting the deployment transaction, you'll need to wait for it to be processed and confirmed on the Kadena mainnet.
+   - This process may take a few minutes, depending on the network conditions.
+
+10.7. **Verify Successful Deployment**
+   - Once the transaction is confirmed, you can use the `pact` command-line tool or your Kadena wallet to interact with your deployed token contract on the mainnet.
+   - Try executing various token functions, such as minting, transferring, or burning (if applicable), to ensure that your contract is functioning as expected on the mainnet.
+
+10.8. **Announce and Promote Your Token**
+   - After successfully deploying your token to the Kadena mainnet, you can announce and promote it to potential users and investors.
+   - Provide the contract address and instructions for interacting with your token, such as how to add it to wallets or exchange listings.
+   - Consider creating a website, social media presence, or other marketing materials to raise awareness of your token.
+
+***Congratulations! You've successfully completed the process of launching a token on the Kadena blockchain. Your token is now live on the mainnet, and users can interact with it using their Kadena wallets and KDA tokens.***
+
+Remember to continue monitoring and maintaining your token contract, addressing any issues or updates as needed, and engaging with the Kadena community for support and collaboration.
 
 
 
