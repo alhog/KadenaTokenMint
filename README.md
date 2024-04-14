@@ -314,5 +314,50 @@ By connecting your Kadena wallet to the testnet, you can now deploy and interact
 
 After successfully connecting your wallet to the testnet, you'll be ready to proceed to the next step: deploying your token contract to the Kadena testnet.
 
+### **Step 7: Deploy Your Contract to the Testnet**
+
+*Now that you've thoroughly tested your token contract locally and connected your Kadena wallet to the testnet, it's time to deploy your contract to the Kadena testnet. This step will allow you to interact with your token in a real blockchain environment before considering a mainnet deployment.*
+
+7.1. **Open a Terminal or Command Prompt**
+   - Open a terminal or command prompt on your system.
+   - Navigate to the directory containing your token contract file (e.g., `token.pact`).
+
+7.2. **Load Your Contract**
+   - Use the `pact` command-line tool to load your token contract:
+     ```
+     pact --load token.pact --envdata envdata.json
+     ```
+   - This command loads your contract code and prepares it for deployment.
+
+7.3. **Connect to the Testnet**
+   - Next, you'll need to specify the Kadena testnet as the target blockchain for deployment.
+   - Use the `--host` and `--port` flags to connect to the testnet:
+     ```
+     pact --host testnet.kadena.io --port 443 --tls
+     ```
+   - These flags specify the testnet URL and enable TLS (Transport Layer Security) for a secure connection.
+
+7.4. **Prepare the Deployment Command**
+   - Use the `pact` command-line tool to prepare the deployment command:
+     ```
+     pact --code '(token.token-main-entry)'
+     ```
+   - This command specifies the entry point for your token contract, which is typically a function named `token-main-entry` or something similar.
+
+7.5. **Sign and Submit the Deployment Transaction**
+   - Your Kadena wallet will prompt you to sign the deployment transaction.
+   - Open your wallet application, review the transaction details, and confirm the deployment.
+   - Once signed, the transaction will be submitted to the Kadena testnet for processing.
+
+7.6. **Wait for Transaction Confirmation**
+   - After submitting the deployment transaction, you'll need to wait for it to be processed and confirmed on the Kadena testnet.
+   - This process may take a few minutes, depending on the network conditions.
+
+7.7. **Verify Successful Deployment**
+   - Once the transaction is confirmed, you can use the `pact` command-line tool or your Kadena wallet to interact with your deployed token contract on the testnet.
+   - Try executing various token functions, such as minting, transferring, or burning (if applicable), to ensure that your contract is functioning as expected on the testnet.
+
+Deploying your token contract to the Kadena testnet is an important step in the development process, as it allows you to test your token in a realistic blockchain environment before considering a mainnet deployment. If everything works as expected on the testnet, you can proceed to the next step, which involves acquiring mainnet Kadena (KDA) tokens for the mainnet deployment.
+
 
 
